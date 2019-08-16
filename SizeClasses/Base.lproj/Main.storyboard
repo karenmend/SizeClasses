@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,107 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SizeClasses" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1o-mc-mTM" userLabel="Azul verde">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudandsun" translatesAutoresizingMaskIntoConstraints="NO" id="Crp-qb-TWX">
+                                        <rect key="frame" x="28" y="28" width="319" height="277.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3739005406" green="1" blue="0.94524430390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Crp-qb-TWX" firstAttribute="top" secondItem="P1o-mc-mTM" secondAttribute="top" constant="28" id="2lz-yW-XJa"/>
+                                    <constraint firstAttribute="trailing" secondItem="Crp-qb-TWX" secondAttribute="trailing" constant="28" id="7eJ-PP-gIb"/>
+                                    <constraint firstAttribute="bottom" secondItem="Crp-qb-TWX" secondAttribute="bottom" constant="28" id="Wjl-72-YBe"/>
+                                    <constraint firstItem="Crp-qb-TWX" firstAttribute="leading" secondItem="P1o-mc-mTM" secondAttribute="leading" constant="28" id="yy6-fM-yjI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDK-G0-eMk" userLabel="Verde">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WrO-Sq-1Nr">
+                                        <rect key="frame" x="222" y="288" width="111" height="87"/>
+                                        <color key="backgroundColor" red="0.9676071885597094" green="1" blue="0.59623620251319753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20º" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVm-uJ-Bua">
+                                        <rect key="frame" x="96" y="95" width="182" height="143.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.61901624936830402" green="1" blue="0.66203776837160366" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="MVm-uJ-Bua" firstAttribute="centerY" secondItem="nDK-G0-eMk" secondAttribute="centerY" id="2uP-RV-Sb5"/>
+                                    <constraint firstAttribute="bottom" secondItem="WrO-Sq-1Nr" secondAttribute="bottom" id="LeJ-5y-ryX"/>
+                                    <constraint firstItem="MVm-uJ-Bua" firstAttribute="centerX" secondItem="nDK-G0-eMk" secondAttribute="centerX" id="SPn-zq-Sha"/>
+                                    <constraint firstAttribute="trailing" secondItem="WrO-Sq-1Nr" secondAttribute="trailing" id="oeP-Nf-IX9"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="WrO-Sq-1Nr"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="WrO-Sq-1Nr"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nDK-G0-eMk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="331-h5-5fu"/>
+                            <constraint firstItem="nDK-G0-eMk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7Dw-fA-JA9"/>
+                            <constraint firstItem="nDK-G0-eMk" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="QeC-ko-ASC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P1o-mc-mTM" secondAttribute="bottom" id="RG3-86-SVa"/>
+                            <constraint firstItem="nDK-G0-eMk" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="RVj-5f-i68"/>
+                            <constraint firstItem="P1o-mc-mTM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SL1-ni-XFc"/>
+                            <constraint firstItem="P1o-mc-mTM" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="Tek-LC-DoH"/>
+                            <constraint firstItem="nDK-G0-eMk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UVm-9j-D7M"/>
+                            <constraint firstItem="nDK-G0-eMk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yfz-qq-PRI"/>
+                            <constraint firstItem="P1o-mc-mTM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="bLT-gm-8jX"/>
+                            <constraint firstItem="P1o-mc-mTM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iHo-6p-Iyq"/>
+                            <constraint firstItem="P1o-mc-mTM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sEW-F9-GGI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RG3-86-SVa"/>
+                                <exclude reference="bLT-gm-8jX"/>
+                                <exclude reference="RVj-5f-i68"/>
+                                <exclude reference="UVm-9j-D7M"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="RG3-86-SVa"/>
+                                <exclude reference="SL1-ni-XFc"/>
+                                <exclude reference="Tek-LC-DoH"/>
+                                <include reference="bLT-gm-8jX"/>
+                                <exclude reference="QeC-ko-ASC"/>
+                                <include reference="RVj-5f-i68"/>
+                                <include reference="UVm-9j-D7M"/>
+                                <exclude reference="Yfz-qq-PRI"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-98.50074962518741" y="117.59999999999999"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cloudandsun" width="256" height="256"/>
+    </resources>
 </document>
